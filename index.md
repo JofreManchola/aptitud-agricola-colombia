@@ -31,7 +31,8 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-<svg width="960" height="600"></svg>
+<!-- <svg width="960" height="600"></svg> -->
+<svg width="690" height="600"></svg>
 <script src="assets/js/main.js"></script>
 
 ### Jekyll Themes
