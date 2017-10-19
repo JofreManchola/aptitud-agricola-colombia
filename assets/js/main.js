@@ -3,6 +3,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height");
 var r = 15;
 var color = d3.scaleOrdinal(d3.schemeCategory10);
+var colorAptitud = ["#31a354", "#addd8e", "#f7fcb9"];
 var colorLink = d3.scaleOrdinal(d3.schemeCategory20);
 var seleccion = "sideBySide"; // radioAgricola || radialDepartamento || sideBySide
 
@@ -86,11 +87,28 @@ function update(config) {
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
             .attr("class", "links")
             .selectAll("line")
-            // .data(graph.links);
             .data(graph.links)
             .enter().append("line")
             .attr("stroke-width", function (d) { return ((+d.Alta * 10)); })
-            .style("stroke", function (d) { return color(5); });
+            .style("stroke", function (d) { return colorAptitud[0]; });
+
+        var linkMedia = svg.append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", function (d) { return ((+d.Media * 10)); })
+            .style("stroke", function (d) { return colorAptitud[1]; });
+
+        var linkBaja = svg.append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", function (d) { return ((+d.Baja * 10)); })
+            .style("stroke", function (d) { return colorAptitud[2]; });
 
         var node = svg.append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
@@ -122,6 +140,16 @@ function update(config) {
                 .attr("y1", function (d) { return d.source.y; })
                 .attr("x2", function (d) { return d.target.x; })
                 .attr("y2", function (d) { return d.target.y; });
+            linkMedia
+                .attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
+            linkBaja
+                .attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
             node
                 .attr("cx", function (d) { return d.x; })
                 .attr("cy", function (d) { return d.y; });
@@ -132,7 +160,7 @@ function update(config) {
 }
 
 function dragstarted(d) {
-    if (!d3.event.active) selSimulation(seleccion).alphaTarget(0.1).restart();
+    if (!d3.event.active) selSimulation(seleccion).alphaTarget(0.5).restart();
     d.fx = d.x;
     d.fy = d.y;
 }

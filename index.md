@@ -8,49 +8,31 @@
 <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
   
 ## Aptitud agrícola en Colombia
-test
+La [Unidad de Planificación Rural Agropecuaria - UPRA](http://upra.gov.co/), dentro de sus actividades de ordenamiento productivo, produce mapas de zonificación de cadenas productivas. Estos mapas permiten ver independientemente la aptitud para cada producto, la siguiente visualización pretende mostrar en un solo vistazo, la aptitud de todos los productos agrícolas encontrados su sistema de información - [SIPRA](http://upra.gov.co/SIPRA/) relacionandola con cada uno de los departamentos, esto permite identificar:
+
+- Productos con aptitud en varios departamentos.
+- Productos con baja aptitud en el territorio nacional.
+- Departamentos con poca relación de aptitud de productos agropecuarios.
+- Departamentos con aptitud para gran cantidad de productos agopecuarios.
+
+Para mayor claridad, se presenta una imagen se ilustra la forma de presentar la zonificación de aptitud para cacao en el [SIPRA](http://upra.gov.co/SIPRA/), allí se puede observar el comportamiento de la aptitud en todo el territorio nacional.
+
+![caucho](assets/img/zonificacionCaucho.png "tomada de upra.gov.co)
+
+_fuente: https://drive.google.com/file/d/0B41eMRb76ohELXJUR2o0SzFITk0/view_
+
+
 You can use the [editor on GitHub](https://github.com/JofreManchola/aptitud-agricola-colombia/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
 <button id="sideBySide" type="button" class="btn btn-outline-primary btn-sm">Separación lateral</button>
 <button id="radialDepartamento" type="button" class="btn btn-outline-success btn-sm">Radial departamentos</button>
 <button id="radioAgricola" type="button" class="btn btn-outline-info btn-sm">Radial productos agrícolas</button>
 
-
-
 <svg width="690" height="580"></svg>
 <script src="assets/js/main.js"></script>
 
-### Jekyll Themes
+### Más información
+Para mayor información puede visitar el sitio web de la UPRA ([http://upra.gov.co/](http://upra.gov.co/)) o su [Sistema de Información para la Planificación Rural Agropecuaria - SIPRA](http://upra.gov.co/SIPRA/).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JofreManchola/aptitud-agricola-colombia/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
