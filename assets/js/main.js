@@ -41,7 +41,7 @@ var simulation = d3.forceSimulation()
 
 var simulationRadDepto = d3.forceSimulation()
     .force("r", d3.forceRadial(function (d) {
-        return (d.group == "Departamento") ? (width / 2) - r : 0;
+        return (d.group == "Departamento") ? (width / 2) - (2 * r) : 0;
     }))
     .force("link", d3.forceLink().id(function (d) { return d.id; }).strength(0.005))
     .force("charge", d3.forceManyBody().strength(function (d) {
