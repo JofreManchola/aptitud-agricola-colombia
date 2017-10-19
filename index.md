@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
   
@@ -31,8 +37,14 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-<!-- <svg width="960" height="600"></svg> -->
-<svg width="690" height="600"></svg>
+
+<button id="sideBySide" type="button" class="btn btn-outline-primary btn-sm">Separación lateral</button>
+<button id="radialDepartamento" type="button" class="btn btn-outline-success btn-sm">Radial departamentos</button>
+<button id="radioAgricola" type="button" class="btn btn-outline-info btn-sm">Radial productos agrícolas</button>
+
+
+
+<svg width="690" height="580"></svg>
 <script src="assets/js/main.js"></script>
 
 ### Jekyll Themes
