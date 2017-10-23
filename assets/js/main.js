@@ -77,29 +77,23 @@ var selSimulation = function (expression) {
     }
     return retorno;
 }
+
+function set_highlight(d) {
+    var list1 = d3.selectAll(".links line")
+        .attr("class", function (o) {
+            return o.source.id == d.id || o.target.id == d.id ? "enabled-links" : "disabled-links";
+        });
+}
+
+function exit_highlight() {
+    var list1 = d3.selectAll(".links line").attr("class", "");
+}
+
 function update(config) {
     seleccion = config;
 
     d3.json("assets/data/data.json", function (error, graph) {
         if (error) throw error;
-
-        var link = svg.append("g")
-            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(graph.links)
-            .enter().append("line")
-            .attr("stroke-width", function (d) { return ((+d.Alta * 10)); })
-            .style("stroke", function (d) { return colorAptitud[0]; });
-
-        var linkMedia = svg.append("g")
-            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(graph.links)
-            .enter().append("line")
-            .attr("stroke-width", function (d) { return ((+d.Media * 10)); })
-            .style("stroke", function (d) { return colorAptitud[1]; });
 
         var linkBaja = svg.append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
@@ -107,8 +101,27 @@ function update(config) {
             .selectAll("line")
             .data(graph.links)
             .enter().append("line")
-            .attr("stroke-width", function (d) { return ((+d.Baja * 10)); })
+            .attr("stroke-width", function (d) { return ((+d.Baja * 15)); })
             .style("stroke", function (d) { return colorAptitud[2]; });
+
+        var linkMedia = svg.append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", function (d) { return ((+d.Media * 15)); })
+            .style("stroke", function (d) { return colorAptitud[1]; });
+
+        var link = svg.append("g")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", function (d) { return ((+d.Alta * 15)); })
+            .style("stroke", function (d) { return colorAptitud[0]; });
+
 
         var node = svg.append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
@@ -125,6 +138,9 @@ function update(config) {
 
         node.append("title")
             .text(function (d) { return d.id; });
+
+        node.on("mouseover", function (d) { set_highlight(d); })
+            .on("mouseout", function () { exit_highlight(); });
 
         selSimulation(seleccion)
             .nodes(graph.nodes)
