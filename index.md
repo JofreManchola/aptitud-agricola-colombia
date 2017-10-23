@@ -8,7 +8,7 @@
 <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
   
 # Aptitud agrícola en Colombia
-La [Unidad de Planificación Rural Agropecuaria - UPRA](http://upra.gov.co/), dentro de sus actividades de ordenamiento productivo, produce mapas de zonificación de cadenas productivas. Estos mapas permiten ver independientemente la aptitud para cada producto, la siguiente visualización pretende mostrar en un solo vistazo, la aptitud de todos los productos agrícolas encontrados su sistema de información - [SIPRA](http://upra.gov.co/SIPRA/) relacionandola con cada uno de los departamentos, esto permite identificar:
+La [Unidad de Planificación Rural Agropecuaria - UPRA](http://upra.gov.co/), dentro de sus actividades de ordenamiento productivo, produce mapas de zonificación de cadenas productivas. Estos mapas permiten ver independientemente la aptitud para cada producto, la siguiente visualización pretende mostrar en un solo vistazo, la aptitud de todos los productos agrícolas encontrados su sistema de información ([SIPRA](http://upra.gov.co/SIPRA/)) relacionandola con cada uno de los departamentos. Esto permite identificar:
 
 - Productos con aptitud en varios departamentos.
 - Productos con baja aptitud en el territorio nacional.
