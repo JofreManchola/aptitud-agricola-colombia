@@ -22,3 +22,60 @@ svg {
 .nodes circle:hover {
     cursor: pointer;
 }
+
+#legend{
+  border: solid 1px black;
+  width: fit-content;
+  padding: 5px;
+  position: relative;
+  right: 20px;
+  top: 20px;
+  position: relative;
+  left: 700px;
+  top: 100px;
+}
+#nodes, #edges{
+  clear: both;
+}
+#row{
+  white-space: nowrap;
+  clear: both;
+  font-size: 12px;
+}
+.titleLegend{
+  font-weight: bold;
+  font-size: 12px;
+}
+.departamentoNode{
+  width: 10px;
+  height: 10px;
+  background-color: #1f77b4;
+  border-radius: 50%;
+  margin: 5px;
+  float: left;
+}
+.productoNode{
+  width: 10px;
+  height: 10px;
+  background-color: #ff7f0e;
+  border-radius: 50%;
+  margin: 5px;
+  float: left;
+}
+.aptitud{
+  width: 10px;
+  height: 10px;
+  background-color: #ff7f0e;
+  border-radius: 50%;
+  margin: 5px;
+  float: left;
+}
+.alta{
+  background-color: #31a354
+}
+.media{
+  background-color: #addd8e
+}
+.baja{
+  background-color: #f7fcb9
+}
