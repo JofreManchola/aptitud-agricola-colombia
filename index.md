@@ -28,7 +28,7 @@ baja - Grosor: porcentaje del área del departamento
 <button id="sideBySide" type="button" class="btn btn-outline-primary btn-sm">Separación lateral</button>
 <button id="radialDepartamento" type="button" class="btn btn-outline-success btn-sm">Radial departamentos</button>
 <button id="radioAgricola" type="button" class="btn btn-outline-info btn-sm">Radial productos agrícolas</button>
-
+<svg width="690" height="580"></svg>
 <div id="legend">
     <div id="nodes">
         <span class="titleLegend">Nodos</span>
@@ -52,8 +52,6 @@ baja - Grosor: porcentaje del área del departamento
         </div>
     </div>
 </div>
-<svg width="690" height="580"></svg>
-
 <script src="assets/js/main.js"></script>
 
 ## Hallazgos - Las gránjas avícolas es el producto con mayor aptitud desde el punto de vista de cantidad de departamentos
