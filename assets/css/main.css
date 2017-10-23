@@ -3,10 +3,22 @@ svg {
 }
 .links line {
   stroke: #999;
-  stroke-opacity: 0.6;
+  stroke-opacity: 0.4;
+}
+
+.disabled-links{
+  stroke-opacity: 0 !important;
+}
+
+.enabled-links{
+  stroke-opacity: 1 !important;
 }
 
 .nodes circle {
   stroke: #fff;
   stroke-width: 1.5px;
+}
+
+.nodes circle:hover {
+    cursor: pointer;
 }
