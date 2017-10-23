@@ -24,15 +24,13 @@ svg {
 }
 
 #legend{
-  border: solid 1px black;
-  width: fit-content;
-  padding: 5px;
-  position: relative;
-  right: 20px;
-  top: 20px;
-  position: relative;
-  left: 700px;
-  top: 100px;
+    border: solid 1px black;
+    width: fit-content;
+    padding: 5px;
+    right: 20px;
+    position: relative;
+    left: 700px;
+    bottom: 586px;
 }
 #nodes, #edges{
   clear: both;
