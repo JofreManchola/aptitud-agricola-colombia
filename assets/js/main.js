@@ -3,7 +3,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height");
 var r = 15;
 var color = d3.scaleOrdinal(d3.schemeCategory10);
-var colorAptitud = ["#31a354", "#addd8e", "#f7fcb9"];
+var colorAptitud = ["#004529", "#41ab5d", "#d9f0a3"];
 var colorLink = d3.scaleOrdinal(d3.schemeCategory20);
 var seleccion = "sideBySide"; // radioAgricola || radialDepartamento || sideBySide
 
@@ -198,4 +198,3 @@ d3.selectAll("button").on("click", function (d, i, arr) {
 });
 
 update("sideBySide"); // radioAgricola || radialDepartamento || sideBySide
-
