@@ -1,5 +1,5 @@
 svg {
-  border: solid 1px black;
+  border: solid 1px #aaa;
 }
 .links line {
   stroke: #999;
@@ -20,11 +20,11 @@ svg {
 }
 
 .nodes circle:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #legend{
-    border: solid 1px #aaaaaa;
+  padding: 10px 10px 10px 30px;
 }
 #nodes, #edges{
   clear: both;

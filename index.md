@@ -43,30 +43,20 @@ zonas con aptitud alta, media, baja, zonas no aptas o con exlusiones legales.
 <button id="radioAgricola" type="button" class="btn btn-outline-info btn-sm">Radial productos agrícolas</button>
 
 <div>
-  <svg width="690" height="580"></svg>
   <div class="row" id="legend">
-    <div id="nodes">
+    <div id="nodes" class="row col-md-6">
       <span class="titleLegend">Nodos</span>
-      <div id="row">
-        <div class="departamentoNode"></div><span>Departamento</span>
-      </div>
-      <div id="row">
-        <div class="productoNode"></div><span>Producto agrícola</span>
-      </div>
+      <div class="departamentoNode"></div><span>Departamento</span>
+      <div class="productoNode"></div><span>Producto agrícola</span>
     </div>
-    <div id="edges">
+    <div id="edges" class="row col-md-6">
       <span class="titleLegend">Enlaces</span>
-      <div id="row">
-        <div class="aptitud alta"></div><span>Aptitud alta</span>
-      </div>
-      <div id="row">
-        <div class="aptitud media"></div><span>Aptitud media</span>
-      </div>
-      <div id="row">
-        <div class="aptitud baja"></div><span>Aptitud baja</span>
-      </div>
+      <div class="aptitud alta"></div><span>Aptitud alta</span>
+      <div class="aptitud media"></div><span>Aptitud media</span>
+      <div class="aptitud baja"></div><span>Aptitud baja</span>
     </div>
   </div>
+  <svg width="690" height="580"></svg>
 </div>
 <script src="assets/js/main.js"></script>
 
