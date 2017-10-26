@@ -44,16 +44,20 @@ zonas con aptitud alta, media, baja, zonas no aptas o con exlusiones legales.
 
 <div>
   <div class="row" id="legend">
-    <div id="nodes" class="row col-md-6">
-      <span class="titleLegend">Nodos</span>
-      <div class="departamentoNode"></div><span>Departamento</span>
-      <div class="productoNode"></div><span>Producto agrícola</span>
+    <div class="col-md-6">
+      <div class="titleLegend">Nodos</div>
+      <div class="row">
+        <div class="departamentoNode"></div><span>Departamento</span>
+        <div class="productoNode"></div><span>Producto agrícola</span>
+      </div>
     </div>
-    <div id="edges" class="row col-md-6">
-      <span class="titleLegend">Enlaces</span>
-      <div class="aptitud alta"></div><span>Aptitud alta</span>
-      <div class="aptitud media"></div><span>Aptitud media</span>
-      <div class="aptitud baja"></div><span>Aptitud baja</span>
+    <div class="col-md-6">
+      <div class="titleLegend">Enlaces</div>
+      <div class="row">
+        <div class="aptitud alta"></div><span>Aptitud alta</span>
+        <div class="aptitud media"></div><span>Aptitud media</span>
+        <div class="aptitud baja"></div><span>Aptitud baja</span>
+      </div>
     </div>
   </div>
   <svg width="690" height="580"></svg>
