@@ -29,8 +29,8 @@ svg {
     padding: 5px;
     right: 20px;
     position: relative;
-    left: 700px;
-    bottom: 586px;
+  /* left: 700px; */
+  /* bottom: 586px; */
 }
 #nodes, #edges{
   clear: both;
